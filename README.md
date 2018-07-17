@@ -8,6 +8,17 @@ Implementation and comparison of performance to find strongly connected componen
 * Nuutila algorithm
 * Pearce algorithm
 
+# Project implementation
+#### To start the program
+* Check global variable `TEST` set to False
+* Run SCC.py
+* Optionally set `SIZE_BENCHMARK` to another value
+#### To test correctness of algorithms
+* Check global variable `TEST` set to True
+* Optionally set global variable `TEST_NODE_SIZE` to a valid number 
+* Optionally set global variable `TEST_EDGE_PROBABILITY` to a valid number (0,1) 
+* If either `TEST_NODE_SIZE` or `TEST_EDGE_PROBABILITY` are set to 0, a valid random value is automatically generated
+* If `TEST_NODE_SIZE` either given or generated is lower than 50 a graph showing SCCs is showed
 # Project documentation
 #### SCC.py
 * This file contains the main: it performs either a check of SCCs in randomly generated graphs or a test of correctness of algorithms
@@ -47,18 +58,6 @@ Implementation and comparison of performance to find strongly connected componen
 #### graph folder
 * Within this folder performance records plot are saved for both mean and variance for each category of graph: sparse, normal, dense
 * Within each image, algorithms are compared and presented with different colors
-
-# Project implementation
-#### To start the program
-* Check global variable `TEST` set to False
-* Run SCC.py
-* Eventually set `SIZE_BENCHMARK` to another value
-#### To test correctness of algorithms
-* Check global variable `TEST` set to True
-* Eventually set global variable `TEST_NODE_SIZE` to a valid number 
-* Eventually set global variable `TEST_EDGE_PROBABILITY` to a valid number (0,1) 
-* If either `TEST_NODE_SIZE` or `TEST_EDGE_PROBABILITY` are set to 0, a valid random value is automatically generated
-* If `TEST_NODE_SIZE` either given or generated is lower than 50 a graph showing SCCs is showed
 
 ## Student
 * Guido Borrelli - 874451
