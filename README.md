@@ -12,14 +12,14 @@ Implementation and comparison of performance to find strongly connected componen
 #### SCC.py
 * This file contains the main: it performs either a check of SCCs in randomly generated graphs or a test of correctness of algorithms
 * Check of SCCs works in such a way
- * A test set is generated for several categories of graphs. Each of these categories is performed with different number of nodes contained in `dimension_list`, and density: sparse, normal, dense
+	* A test set is generated for several categories of graphs. Each of these categories is performed with different number of nodes contained in `dimension_list`, and density: sparse, normal, dense
  * A set of graphs for the benchmark of each category is created and each graph performance recorded
  * After this phase, the file related to plot performance results is called
  * My initial idea was to quantify the size of graphs of each benchmark in an adaptive fashion to maximize samples when computation allowed it, but I haven't find a nice fashion and fixed the value to a global constant value in head of file
 * Test of correctness of algorithms works in such a way
- * Global variable `TEST` in SCC.py is manually set to True
- * Eventually global variables `TEST_NODE_SIZE` and `TEST_EDGE_PROBABILITY` are set to valid number, as specified below for wrt implentation
- * Main method detects test environment is required and call function within file test.py
+	* Global variable `TEST` in SCC.py is manually set to True
+	* Eventually global variables `TEST_NODE_SIZE` and `TEST_EDGE_PROBABILITY` are set to valid number, as specified below for wrt implentation
+	* Main method detects test environment is required and call function within file test.py
 #### test.py
 * Function is called with eventually parametrised values of test, otherwise values are randomly generated
 * After a graph is generated, SCCs are retrieved for each algorithm manually implemented and by a builtin function offered by networkx
