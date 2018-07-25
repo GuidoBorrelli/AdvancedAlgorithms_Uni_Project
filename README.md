@@ -11,7 +11,7 @@ Implementation and comparison of performance to find strongly connected componen
 # Project implementation
 #### To start the program
 * Check global variable `TEST` set to False
-* Run SCC.py
+* Run main.py
 * Optionally set `SIZE_BENCHMARK` to another value
 #### To test correctness of algorithms
 * Check global variable `TEST` set to True
@@ -20,7 +20,7 @@ Implementation and comparison of performance to find strongly connected componen
 * If either `TEST_NODE_SIZE` or `TEST_EDGE_PROBABILITY` are set to 0, a valid random value is automatically generated
 * If `TEST_NODE_SIZE` either given or generated is lower than 50 a graph showing SCCs is showed
 # Project documentation
-#### SCC.py
+#### main.py
 * This file contains the main: it performs either a check of SCCs in randomly generated graphs or a test of correctness of algorithms
 * Check of SCCs works in such a way
 	* A test set is generated for several categories of graphs. Each of these categories is performed with different number of nodes contained in `dimension_list`, and density: sparse, normal, dense
@@ -28,7 +28,7 @@ Implementation and comparison of performance to find strongly connected componen
  	* After this phase, the file related to plot performance results is called
  	* My initial idea was to quantify the size of graphs of each benchmark in an adaptive fashion to maximize samples when computation allowed it, but I haven't find a nice fashion and fixed the value to a global constant value in head of file
 * Test of correctness of algorithms works in such a way
-	* Global variable `TEST` in SCC.py is manually set to True
+	* Global variable `TEST` in main.py is manually set to True
 	* Eventually global variables `TEST_NODE_SIZE` and `TEST_EDGE_PROBABILITY` are set to valid number, as specified below for wrt implentation
 	* Main method detects test environment is required and call function within file test.py
 #### test.py
