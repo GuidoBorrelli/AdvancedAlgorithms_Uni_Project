@@ -6,11 +6,13 @@ import alg2 as nuutila
 import alg3 as pearce
 import performance
 import test
+import memory
 
 SIZE_BENCHMARK = 10000
-TEST = False
-TEST_NODE_SIZE = 0
-TEST_EDGE_PROBABILITY = 0
+TEST = True
+MEMORY_TEST = True
+TEST_NODE_SIZE = 601
+TEST_EDGE_PROBABILITY = 0.05
 DEBUG = False
 
 
@@ -133,7 +135,10 @@ def main():
         performance.plot_result(dict_performance)
         print("End")
     else:
-        test.test_algorithms(TEST_NODE_SIZE, TEST_EDGE_PROBABILITY)
+        if not MEMORY_TEST:
+            test.test_algorithms(TEST_NODE_SIZE, TEST_EDGE_PROBABILITY)
+        else:
+            memory.memory_test()
     return 0
 
 

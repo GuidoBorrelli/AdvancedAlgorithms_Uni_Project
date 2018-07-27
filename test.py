@@ -7,6 +7,7 @@ import colorsys
 import math
 import matplotlib.pyplot as plt
 
+
 DEBUG = False
 
 
@@ -16,6 +17,7 @@ def test_algorithms(node_size, edge_probability):
     if edge_probability == 0:
         edge_probability = random.randint(1, 90) / 100
     graph = nx.gnp_random_graph(node_size, edge_probability, seed=None, directed=True)
+    pass
     res_1 = pearce.apply_alg(graph)
     res_2 = nuutila.apply_alg(graph)
     res_3 = tarjan.apply_alg(graph)
