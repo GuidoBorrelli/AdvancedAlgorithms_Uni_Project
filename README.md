@@ -1,6 +1,6 @@
 # Project Advanced Algorithms 2017/2018
 
-This is the the folder for the project of the AAPP course attended at Politecnico di Milano.
+Repo for the Advanced Algorithms and Parallel Programming course project attended at Politecnico di Milano.
 
 # Project specifications
 Implementation and comparison of performance to find strongly connected components within a graph
